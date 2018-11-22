@@ -1,3 +1,4 @@
+//88 г)
 function addOneToTheStartAndToTheEnd(n) {
     var arr=[];
     while(n) {

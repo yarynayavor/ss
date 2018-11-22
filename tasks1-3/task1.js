@@ -1,3 +1,4 @@
+//88 в)
 function replaceFirstLastN(n) {
     var result=n;
     if(n>9) {

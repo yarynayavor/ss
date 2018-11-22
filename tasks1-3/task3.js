@@ -1,3 +1,4 @@
+//332
 function findXyzt(n) {
     var x=parseInt(Math.sqrt(n));
     var y=0,z=0,t=0;
