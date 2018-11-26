@@ -1,20 +1,14 @@
-//88 в)
-function replaceFirstLastN(n) {
-    var result=n;
-    if(n>9) {
-        var arr=[];
-        while(n) {
-            arr[arr.length]=n%10;
-            n=parseInt(n/10);
+module.exports= {
+    replaceFirstLastN: (n) => {
+        let num=n;
+        let k=1;
+        let lastNumber=n%10;
+        while(num>10) {
+            num/=10;
+            k*=10;
         }
-        var arrReverse=arr.reverse();
-        var first=arrReverse[0];
-        var last=arrReverse[arrReverse.length-1];
-        arrReverse[0]=last;
-        arrReverse[arrReverse.length-1]=first;
-        result=parseInt(arrReverse.join(''));
+        let firstNumber=num-num%1;
+        let result=lastNumber*k+n%k-(lastNumber*k+n%k)%10+firstNumber;
+        return result;
     }
-    return result;
 }
-
-console.log(replaceFirstLastN(54524));

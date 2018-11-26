@@ -1,0 +1,25 @@
+module.exports= {
+    elements:[
+        {
+            id:1,
+            student:'Student1',
+            taskOne:'123',
+            taskTwo:'251',
+            taskThree:'556',
+        },
+        {
+            id:2,
+            student:'Student2',
+            taskOne:'789',
+            taskTwo:'814',
+            taskThree:'541',
+        },
+        {
+            id:3,
+            student:'Student3',
+            taskOne:'798',
+            taskTwo:'254',
+            taskThree:'774',
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+doctype html
+html
+    head
+        title TaskNode
+    style. 
+        body {
+            text-align:center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 60%;
+            margin:0 auto;
+            }
+
+        td,th {
+            border: 1px solid #dddddd;
+            padding:8px;
+            font-size:20px;
+            }
+    body
+        h1 #{title}
+        table
+            tr
+                th Students
+                th Task1
+                th Task2
+                th Task3
+            each element, i in elements
+                tr
+                    td=element.student
+                    td=element.taskOne
+                    td=element.taskTwo
+                    td=element.taskThree
